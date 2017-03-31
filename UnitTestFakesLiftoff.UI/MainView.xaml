@@ -4,9 +4,19 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:UnitTestFakesLiftoff.UI"
+        xmlns:vm="clr-namespace:UnitTestFakesLiftoff.Core.ViewModel;assembly=UnitTestFakesLiftoff.Core"
         mc:Ignorable="d"
-        Title="MainView" Height="300" Width="300">
+        Title="MainView" Height="300" Width="400" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize">
+    <Window.DataContext>
+        <vm:MainViewModel/>
+    </Window.DataContext>
+    
     <Grid>
-        
+        <Grid Margin="8">
+            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                <TextBlock Text="What's the weather like right now?" FontSize="20" TextAlignment="Center"/>
+                <TextBlock Text="{Binding CurrentWeatherText}" FontSize="15" TextAlignment="Center" Opacity="0.8"/>
+            </StackPanel>
+        </Grid>
     </Grid>
 </Window>

@@ -16,7 +16,7 @@ namespace UnitTestFakesLiftoff.Core.Service
         public string GetCurrentWeather()
         {
             // Do it with some network stuff
-            return "Sonny";
+            return "Sunny";
         }
     }
 }
