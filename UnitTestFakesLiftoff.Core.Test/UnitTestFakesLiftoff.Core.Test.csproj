@@ -63,6 +63,9 @@
       <Name>UnitTestFakesLiftoff.Core</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <Fakes Include="Fakes\UnitTestFakesLiftoff.Core.fakes" />
+  </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>

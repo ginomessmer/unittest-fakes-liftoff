@@ -9,6 +9,7 @@ namespace UnitTestFakesLiftoff.Core.Test
         [TestMethod]
         public void SimpleTestMethod()
         {
+            
         }
     }
 }
